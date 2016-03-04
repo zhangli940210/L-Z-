@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "UIView+LZExtension.h"
 #import "UIBarButtonItem+LZExtension.h"
+#import "UIImage+image.h"
 
 #ifdef DEBUG
 #define LZLog(...)  NSLog(__VA_ARGS__)
