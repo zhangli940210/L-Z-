@@ -7,25 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1860B9401C89950F00E7B9B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B93F1C89950F00E7B9B3 /* main.m */; };
-		1860B9431C89950F00E7B9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B9421C89950F00E7B9B3 /* AppDelegate.m */; };
-		1860B9461C89950F00E7B9B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B9451C89950F00E7B9B3 /* ViewController.m */; };
-		1860B9491C89950F00E7B9B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1860B9471C89950F00E7B9B3 /* Main.storyboard */; };
 		1860B94B1C89950F00E7B9B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1860B94A1C89950F00E7B9B3 /* Assets.xcassets */; };
 		1860B94E1C89950F00E7B9B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1860B94C1C89950F00E7B9B3 /* LaunchScreen.storyboard */; };
+		1860B9711C8996EC00E7B9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B96D1C8996EC00E7B9B3 /* AppDelegate.m */; };
+		1860B9721C8996EC00E7B9B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B9701C8996EC00E7B9B3 /* main.m */; };
+		1860B9781C89987600E7B9B3 /* UIBarButtonItem+LZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B9751C89987600E7B9B3 /* UIBarButtonItem+LZExtension.m */; };
+		1860B9791C89987600E7B9B3 /* UIView+LZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B9771C89987600E7B9B3 /* UIView+LZExtension.m */; };
+		1860B97C1C8998B100E7B9B3 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B97B1C8998B100E7B9B3 /* UIImage+image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1860B93B1C89950F00E7B9B3 /* LZ彩票系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LZ彩票系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1860B93F1C89950F00E7B9B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1860B9411C89950F00E7B9B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1860B9421C89950F00E7B9B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1860B9441C89950F00E7B9B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1860B9451C89950F00E7B9B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1860B9481C89950F00E7B9B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1860B94A1C89950F00E7B9B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1860B94D1C89950F00E7B9B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1860B94F1C89950F00E7B9B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1860B96C1C8996EC00E7B9B3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1860B96D1C8996EC00E7B9B3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1860B9701C8996EC00E7B9B3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1860B9731C89971300E7B9B3 /* LZ彩票系统.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LZ彩票系统.pch"; sourceTree = "<group>"; };
+		1860B9741C89987600E7B9B3 /* UIBarButtonItem+LZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LZExtension.h"; sourceTree = "<group>"; };
+		1860B9751C89987600E7B9B3 /* UIBarButtonItem+LZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LZExtension.m"; sourceTree = "<group>"; };
+		1860B9761C89987600E7B9B3 /* UIView+LZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LZExtension.h"; sourceTree = "<group>"; };
+		1860B9771C89987600E7B9B3 /* UIView+LZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LZExtension.m"; sourceTree = "<group>"; };
+		1860B97A1C8998B100E7B9B3 /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		1860B97B1C8998B100E7B9B3 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,8 @@
 		1860B93D1C89950F00E7B9B3 /* LZ彩票系统 */ = {
 			isa = PBXGroup;
 			children = (
-				1860B9411C89950F00E7B9B3 /* AppDelegate.h */,
-				1860B9421C89950F00E7B9B3 /* AppDelegate.m */,
-				1860B9441C89950F00E7B9B3 /* ViewController.h */,
-				1860B9451C89950F00E7B9B3 /* ViewController.m */,
-				1860B9471C89950F00E7B9B3 /* Main.storyboard */,
+				1860B9551C8996EC00E7B9B3 /* Classes */,
 				1860B94A1C89950F00E7B9B3 /* Assets.xcassets */,
-				1860B94C1C89950F00E7B9B3 /* LaunchScreen.storyboard */,
-				1860B94F1C89950F00E7B9B3 /* Info.plist */,
 				1860B93E1C89950F00E7B9B3 /* Supporting Files */,
 			);
 			path = "LZ彩票系统";
@@ -74,9 +73,219 @@
 		1860B93E1C89950F00E7B9B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1860B93F1C89950F00E7B9B3 /* main.m */,
+				1860B9731C89971300E7B9B3 /* LZ彩票系统.pch */,
+				1860B94F1C89950F00E7B9B3 /* Info.plist */,
+				1860B94C1C89950F00E7B9B3 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1860B9551C8996EC00E7B9B3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1860B9561C8996EC00E7B9B3 /* Arena(竞技场) */,
+				1860B95A1C8996EC00E7B9B3 /* Discover(发现) */,
+				1860B95E1C8996EC00E7B9B3 /* Hall(购票大厅) */,
+				1860B9621C8996EC00E7B9B3 /* History(开奖信息) */,
+				1860B9661C8996EC00E7B9B3 /* Main */,
+				1860B9671C8996EC00E7B9B3 /* MyLotter(我的彩票) */,
+				1860B96B1C8996EC00E7B9B3 /* Others */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1860B9561C8996EC00E7B9B3 /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				1860B9571C8996EC00E7B9B3 /* Controller */,
+				1860B9581C8996EC00E7B9B3 /* Model */,
+				1860B9591C8996EC00E7B9B3 /* View */,
+			);
+			path = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		1860B9571C8996EC00E7B9B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1860B9581C8996EC00E7B9B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1860B9591C8996EC00E7B9B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1860B95A1C8996EC00E7B9B3 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				1860B95B1C8996EC00E7B9B3 /* Controller */,
+				1860B95C1C8996EC00E7B9B3 /* Model */,
+				1860B95D1C8996EC00E7B9B3 /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		1860B95B1C8996EC00E7B9B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1860B95C1C8996EC00E7B9B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1860B95D1C8996EC00E7B9B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1860B95E1C8996EC00E7B9B3 /* Hall(购票大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				1860B95F1C8996EC00E7B9B3 /* Controller */,
+				1860B9601C8996EC00E7B9B3 /* Model */,
+				1860B9611C8996EC00E7B9B3 /* View */,
+			);
+			path = "Hall(购票大厅)";
+			sourceTree = "<group>";
+		};
+		1860B95F1C8996EC00E7B9B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1860B9601C8996EC00E7B9B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1860B9611C8996EC00E7B9B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1860B9621C8996EC00E7B9B3 /* History(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				1860B9631C8996EC00E7B9B3 /* Controller */,
+				1860B9641C8996EC00E7B9B3 /* Model */,
+				1860B9651C8996EC00E7B9B3 /* View */,
+			);
+			path = "History(开奖信息)";
+			sourceTree = "<group>";
+		};
+		1860B9631C8996EC00E7B9B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1860B9641C8996EC00E7B9B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1860B9651C8996EC00E7B9B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1860B9661C8996EC00E7B9B3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1860B9671C8996EC00E7B9B3 /* MyLotter(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				1860B9681C8996EC00E7B9B3 /* Controller */,
+				1860B9691C8996EC00E7B9B3 /* Model */,
+				1860B96A1C8996EC00E7B9B3 /* View */,
+			);
+			path = "MyLotter(我的彩票)";
+			sourceTree = "<group>";
+		};
+		1860B9681C8996EC00E7B9B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1860B9691C8996EC00E7B9B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1860B96A1C8996EC00E7B9B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1860B96B1C8996EC00E7B9B3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1860B96C1C8996EC00E7B9B3 /* AppDelegate.h */,
+				1860B96D1C8996EC00E7B9B3 /* AppDelegate.m */,
+				1860B9701C8996EC00E7B9B3 /* main.m */,
+				1860B96E1C8996EC00E7B9B3 /* Category */,
+				1860B96F1C8996EC00E7B9B3 /* Lib */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		1860B96E1C8996EC00E7B9B3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1860B97A1C8998B100E7B9B3 /* UIImage+image.h */,
+				1860B97B1C8998B100E7B9B3 /* UIImage+image.m */,
+				1860B9741C89987600E7B9B3 /* UIBarButtonItem+LZExtension.h */,
+				1860B9751C89987600E7B9B3 /* UIBarButtonItem+LZExtension.m */,
+				1860B9761C89987600E7B9B3 /* UIView+LZExtension.h */,
+				1860B9771C89987600E7B9B3 /* UIView+LZExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1860B96F1C8996EC00E7B9B3 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +314,7 @@
 		1860B9331C89950E00E7B9B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = m14a.cn;
 				TargetAttributes = {
@@ -138,7 +348,6 @@
 			files = (
 				1860B94E1C89950F00E7B9B3 /* LaunchScreen.storyboard in Resources */,
 				1860B94B1C89950F00E7B9B3 /* Assets.xcassets in Resources */,
-				1860B9491C89950F00E7B9B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +358,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1860B9461C89950F00E7B9B3 /* ViewController.m in Sources */,
-				1860B9431C89950F00E7B9B3 /* AppDelegate.m in Sources */,
-				1860B9401C89950F00E7B9B3 /* main.m in Sources */,
+				1860B9781C89987600E7B9B3 /* UIBarButtonItem+LZExtension.m in Sources */,
+				1860B9721C8996EC00E7B9B3 /* main.m in Sources */,
+				1860B97C1C8998B100E7B9B3 /* UIImage+image.m in Sources */,
+				1860B9791C89987600E7B9B3 /* UIView+LZExtension.m in Sources */,
+				1860B9711C8996EC00E7B9B3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1860B9471C89950F00E7B9B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1860B9481C89950F00E7B9B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1860B94C1C89950F00E7B9B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,6 +464,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LZ彩票系统/LZ彩票系统.pch";
 				INFOPLIST_FILE = "LZ彩票系统/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "m14a.cn.LZ----";
@@ -272,6 +478,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LZ彩票系统/LZ彩票系统.pch";
 				INFOPLIST_FILE = "LZ彩票系统/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "m14a.cn.LZ----";

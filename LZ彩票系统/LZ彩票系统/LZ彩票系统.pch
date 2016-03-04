@@ -1,0 +1,25 @@
+
+//在使用过程当中, 要判断当前文件是否是OC的文件
+#if __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+LZExtension.h"
+#import "UIBarButtonItem+LZExtension.h"
+
+#ifdef DEBUG
+#define LZLog(...)  NSLog(__VA_ARGS__)
+#else
+#define LZLog(...)
+#endif
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH  [UIScreen mainScreen].bounds.size.height
+
+// RGB颜色
+#define LZColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define LZRandomColor LZColor(arc4random_uniform(256), arc4random_uniform(256),arc4random_uniform(256))
+
+#endif
