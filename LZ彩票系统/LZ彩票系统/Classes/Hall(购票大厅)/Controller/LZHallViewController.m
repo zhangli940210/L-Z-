@@ -10,7 +10,7 @@
 #import "LZCoverView.h"
 #import "LZPopView.h"
 
-@interface LZHallViewController () <LZPopViewDelegate>
+@interface LZHallViewController () // <LZPopViewDelegate>
 
 @end
 
@@ -28,26 +28,28 @@
 {
     // 把显示到最外面的东西添加到窗口上.
     [LZCoverView show];
-    //显示popView
-    LZPopView *popV =  [LZPopView showInPoint:self.view.center];
-    popV.delegate = self;
+    
+    // 显示popView
+    __block __weak LZPopView *popV =  [LZPopView showInPoint:self.view.center];
+    
+    popV.pBlock = ^ {
+        //决定隐藏到哪个位置
+        [popV hiddenInPoint:CGPointMake(20, 40) completion:^{
+            //移除遮盖
+            for (UIView *view in [UIApplication sharedApplication].keyWindow.subviews) {
+                //判断当前View是否是遮盖
+                if([view isKindOfClass:[LZCoverView class]]) {
+                    [view removeFromSuperview];
+                }
+            }
+        }];
+    };
+    
 }
 
 #pragma mark - LZPopViewDelegate方法
-//- (void)popViewClickBtn:(LZPopView *)popView
-//{
-//    //决定隐藏到哪个位置
-//    [popView hiddenInPoint:CGPointMake(20, 40) completion:^{
-//        
-//        for (UIView *childV in [UIApplication sharedApplication].keyWindow.subviews) {
-//            // 判断当前View是否是蒙版
-//            if ([childV isKindOfClass:[LZCoverView class]]) {
-//                [childV removeFromSuperview];
-//            }
-//        }
-//    }];
-//}
 
+/*
 - (void)popViewClickBtn:(LZPopView *)popView {
     
     //决定隐藏到哪个位置
@@ -61,5 +63,5 @@
         }
     }];
 }
-
+*/
 @end

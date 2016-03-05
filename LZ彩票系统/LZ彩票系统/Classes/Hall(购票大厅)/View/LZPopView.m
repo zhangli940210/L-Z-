@@ -20,13 +20,16 @@
  */
 - (IBAction)closeBtnClick {
     // 告诉代理我点击了关闭按钮
-    if ([self.delegate respondsToSelector:@selector(popViewClickBtn:)]) {
-        [self.delegate popViewClickBtn:self];
+//    if ([self.delegate respondsToSelector:@selector(popViewClickBtn:)]) {
+//        [self.delegate popViewClickBtn:self];
+//    }
+    if (_pBlock) {
+        _pBlock();
     }
     
 }
 
-- (void)hiddenInPoint:(CGPoint)point completion:(void (^)())completion
+- (void)hiddenInPoint:(CGPoint)point completion:(QQBlock)completion
 {
     [UIView animateWithDuration:0.5 animations:^{
         self.center = point;
