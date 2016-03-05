@@ -15,6 +15,12 @@
 		1860B9791C89987600E7B9B3 /* UIView+LZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B9771C89987600E7B9B3 /* UIView+LZExtension.m */; };
 		1860B97C1C8998B100E7B9B3 /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B97B1C8998B100E7B9B3 /* UIImage+image.m */; };
 		1861864D1C89B32000EFF296 /* LZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861864C1C89B32000EFF296 /* LZTabBar.m */; };
+		186186501C89CA2A00EFF296 /* LZBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1861864F1C89CA2A00EFF296 /* LZBtn.m */; };
+		18630EED1C8A8E3400D2445E /* LZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18630EEC1C8A8E3400D2445E /* LZNavigationController.m */; };
+		18630EF01C8AB07D00D2445E /* LZArenaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18630EEF1C8AB07D00D2445E /* LZArenaNavigationController.m */; };
+		18630EF31C8AB61B00D2445E /* LZCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18630EF21C8AB61B00D2445E /* LZCoverView.m */; };
+		18630EF61C8AB78600D2445E /* LZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18630EF51C8AB78600D2445E /* LZPopView.m */; };
+		18630EF81C8ABC2700D2445E /* LZPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18630EF71C8ABC2700D2445E /* LZPopView.xib */; };
 		18AC2B2E1C899D7F009EEFE1 /* LZHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC2B2D1C899D7F009EEFE1 /* LZHallViewController.m */; };
 		18AC2B311C899D9C009EEFE1 /* LZArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC2B301C899D9C009EEFE1 /* LZArenaViewController.m */; };
 		18AC2B341C899DB9009EEFE1 /* LZDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC2B331C899DB9009EEFE1 /* LZDiscoverViewController.m */; };
@@ -40,6 +46,17 @@
 		1860B97B1C8998B100E7B9B3 /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 		1861864B1C89B32000EFF296 /* LZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTabBar.h; sourceTree = "<group>"; };
 		1861864C1C89B32000EFF296 /* LZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTabBar.m; sourceTree = "<group>"; };
+		1861864E1C89CA2A00EFF296 /* LZBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBtn.h; sourceTree = "<group>"; };
+		1861864F1C89CA2A00EFF296 /* LZBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBtn.m; sourceTree = "<group>"; };
+		18630EEB1C8A8E3400D2445E /* LZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationController.h; sourceTree = "<group>"; };
+		18630EEC1C8A8E3400D2445E /* LZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationController.m; sourceTree = "<group>"; };
+		18630EEE1C8AB07D00D2445E /* LZArenaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZArenaNavigationController.h; sourceTree = "<group>"; };
+		18630EEF1C8AB07D00D2445E /* LZArenaNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZArenaNavigationController.m; sourceTree = "<group>"; };
+		18630EF11C8AB61B00D2445E /* LZCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZCoverView.h; sourceTree = "<group>"; };
+		18630EF21C8AB61B00D2445E /* LZCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZCoverView.m; sourceTree = "<group>"; };
+		18630EF41C8AB78600D2445E /* LZPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPopView.h; sourceTree = "<group>"; };
+		18630EF51C8AB78600D2445E /* LZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPopView.m; sourceTree = "<group>"; };
+		18630EF71C8ABC2700D2445E /* LZPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPopView.xib; sourceTree = "<group>"; };
 		18AC2B2C1C899D7F009EEFE1 /* LZHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHallViewController.h; sourceTree = "<group>"; };
 		18AC2B2D1C899D7F009EEFE1 /* LZHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHallViewController.m; sourceTree = "<group>"; };
 		18AC2B2F1C899D9C009EEFE1 /* LZArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZArenaViewController.h; sourceTree = "<group>"; };
@@ -210,6 +227,11 @@
 		1860B9611C8996EC00E7B9B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18630EF11C8AB61B00D2445E /* LZCoverView.h */,
+				18630EF21C8AB61B00D2445E /* LZCoverView.m */,
+				18630EF41C8AB78600D2445E /* LZPopView.h */,
+				18630EF51C8AB78600D2445E /* LZPopView.m */,
+				18630EF71C8ABC2700D2445E /* LZPopView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +349,10 @@
 			children = (
 				18AC2B3F1C89A1CC009EEFE1 /* LZTabBarController.h */,
 				18AC2B401C89A1CC009EEFE1 /* LZTabBarController.m */,
+				18630EEB1C8A8E3400D2445E /* LZNavigationController.h */,
+				18630EEC1C8A8E3400D2445E /* LZNavigationController.m */,
+				18630EEE1C8AB07D00D2445E /* LZArenaNavigationController.h */,
+				18630EEF1C8AB07D00D2445E /* LZArenaNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,6 +369,8 @@
 			children = (
 				1861864B1C89B32000EFF296 /* LZTabBar.h */,
 				1861864C1C89B32000EFF296 /* LZTabBar.m */,
+				1861864E1C89CA2A00EFF296 /* LZBtn.h */,
+				1861864F1C89CA2A00EFF296 /* LZBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -405,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18630EF81C8ABC2700D2445E /* LZPopView.xib in Resources */,
 				1860B94E1C89950F00E7B9B3 /* LaunchScreen.storyboard in Resources */,
 				1860B94B1C89950F00E7B9B3 /* Assets.xcassets in Resources */,
 			);
@@ -417,11 +446,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186186501C89CA2A00EFF296 /* LZBtn.m in Sources */,
 				1860B9781C89987600E7B9B3 /* UIBarButtonItem+LZExtension.m in Sources */,
+				18630EF01C8AB07D00D2445E /* LZArenaNavigationController.m in Sources */,
+				18630EF61C8AB78600D2445E /* LZPopView.m in Sources */,
 				18AC2B371C899DCE009EEFE1 /* LZHistoryViewController.m in Sources */,
 				18AC2B341C899DB9009EEFE1 /* LZDiscoverViewController.m in Sources */,
 				18AC2B2E1C899D7F009EEFE1 /* LZHallViewController.m in Sources */,
+				18630EED1C8A8E3400D2445E /* LZNavigationController.m in Sources */,
 				1860B9721C8996EC00E7B9B3 /* main.m in Sources */,
+				18630EF31C8AB61B00D2445E /* LZCoverView.m in Sources */,
 				1860B97C1C8998B100E7B9B3 /* UIImage+image.m in Sources */,
 				18AC2B411C89A1CC009EEFE1 /* LZTabBarController.m in Sources */,
 				1861864D1C89B32000EFF296 /* LZTabBar.m in Sources */,

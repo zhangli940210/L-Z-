@@ -13,8 +13,10 @@
 #import "LZHistoryViewController.h"
 #import "LZMyLotteryViewController.h"
 #import "LZTabBar.h"
+#import "LZNavigationController.h"
+#import "LZArenaNavigationController.h"
 
-@interface LZTabBarController ()
+@interface LZTabBarController () // <LZTabBarDelegate>
 
 /** 存放tabbaritem的可变数组*/
 @property (nonatomic, strong) NSMutableArray *itemArray;
@@ -37,18 +39,18 @@
     //添加所有的子子控制器
     [self addAllChildVC];
     
-    // 移除系统的tabbar
+    // 移除系统的tabbar,并没有真正删除，只是让系统的tabbar显示
     [self.tabBar removeFromSuperview];
     
-//    // 自定义自己的tabbar
-//    LZTabBar *tabBar = [[LZTabBar alloc] init];
-//    // 赋值给自定义的tabbar
-//    tabBar.itemArray = self.itemArray;
+    // 自定义自己的tabbar
     LZTabBar *tabBar = [[LZTabBar alloc] init];
-    tabBar.frame = self.tabBar.frame;
-    tabBar.backgroundColor = [UIColor greenColor];
-    //tabBar.count = 5;
+//    tabBar.delegate = self;
+    tabBar.pBlock = ^ (NSInteger index) {
+        self.selectedIndex = index;
+    };
     tabBar.itemArray = self.itemArray;
+    // 设置尺寸
+    tabBar.frame = self.tabBar.frame;
     [self.view addSubview:tabBar];
 }
 
@@ -83,7 +85,20 @@
     
     childVC.view.backgroundColor = LZRandomColor;
     
-    [self addChildViewController:childVC];
+    // 判断
+    if ([childVC isKindOfClass:[LZArenaViewController class]]) {
+        LZArenaNavigationController *nav = [[LZArenaNavigationController alloc] initWithRootViewController:childVC];
+        [self addChildViewController:nav];
+    } else {
+        LZNavigationController *nav = [[LZNavigationController alloc] initWithRootViewController:childVC];
+        [self addChildViewController:nav];
+    }
 }
+
+//#pragma mark - LZTabBarDelegate 方法
+//- (void)tabBar:(LZTabBar *)tabBar selectBtnIndex:(NSInteger)index
+//{
+//    self.selectedIndex = index;
+//}
 
 @end
