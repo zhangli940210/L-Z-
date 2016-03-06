@@ -82,10 +82,9 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     // 获取偏移量
     CGFloat offsetX = scrollView.contentOffset.x - self.preOffsetX;
-    
-    LZLog(@"-%f", self.preOffsetX);
-    LZLog(@"--%f", scrollView.contentOffset.x);
-    
+//    LZLog(@"-%f", self.preOffsetX);
+//    LZLog(@"--%f", scrollView.contentOffset.x);
+    // 上一次的偏移量重新记录这一次的偏移量
     self.preOffsetX = scrollView.contentOffset.x;
     self.guide1ImageV.x += 2 * offsetX;
     
@@ -93,11 +92,10 @@ static NSString * const reuseIdentifier = @"Cell";
         self.guide1ImageV.x -= offsetX;
     }];
     
-    LZLog(@"--offset%f", offsetX);
+//    LZLog(@"--offset%f", offsetX);
 }
 
 #pragma mark <UICollectionViewDataSource>
-
 // 总共有多少组
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -110,8 +108,8 @@ static NSString * const reuseIdentifier = @"Cell";
     return 4;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
     LZNewFeatureCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     cell.image = [UIImage imageNamed:[NSString stringWithFormat:@"guide%ldBackground568h",indexPath.item + 1]];
