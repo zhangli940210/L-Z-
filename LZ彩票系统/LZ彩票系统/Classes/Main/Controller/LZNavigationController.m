@@ -8,7 +8,10 @@
 
 #import "LZNavigationController.h"
 
-@interface LZNavigationController ()
+@interface LZNavigationController () <UINavigationControllerDelegate>
+
+/** 保存代理*/
+@property (nonatomic ,strong) id popDelegate;
 
 @end
 
@@ -31,6 +34,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    LZLog(@"- %@", self.interactivePopGestureRecognizer);
+    
+    // 保存侧滑手势的代理
+//    LZLog(@"%@",self.interactivePopGestureRecognizer.delegate);
+    self.popDelegate = self.interactivePopGestureRecognizer.delegate;
+    
+    self.delegate = self;
+}
+
+#pragma mark - UINavigationControllerDelegate方法
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+     // 判断当前显示的控制器是否为根控制器.
+    if (self.viewControllers.count == 1) {
+        // 如果是根控制器,设回手势代理
+        self.interactivePopGestureRecognizer.delegate = self.popDelegate;
+    }
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.childViewControllers.count != 0) { // 不是根控制器
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageWithOriImageName:@"NavBack"] style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+        
+        // 重写了系统返回,那么系统的侧滑返回功能就会失效，因为它会通知代理，让代理调用某个方法
+        // 使侧滑功能失效，那么处理方法就是把代理干死
+        self.interactivePopGestureRecognizer.delegate = nil;
+    }
+    
+    [super pushViewController:viewController animated:animated];
+}
+
+- (void)back
+{
+    [self popViewControllerAnimated:YES];
 }
 
 @end

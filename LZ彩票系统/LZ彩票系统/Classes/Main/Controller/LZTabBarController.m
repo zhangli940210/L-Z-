@@ -39,19 +39,28 @@
     //添加所有的子子控制器
     [self addAllChildVC];
     
-    // 移除系统的tabbar,并没有真正删除，只是让系统的tabbar显示
-    [self.tabBar removeFromSuperview];
-    
     // 自定义自己的tabbar
     LZTabBar *tabBar = [[LZTabBar alloc] init];
-//    tabBar.delegate = self;
     tabBar.pBlock = ^ (NSInteger index) {
         self.selectedIndex = index;
     };
     tabBar.itemArray = self.itemArray;
     // 设置尺寸
-    tabBar.frame = self.tabBar.frame;
-    [self.view addSubview:tabBar];
+    tabBar.frame = self.tabBar.bounds;
+    // 把自己创建的tabbar添加到系统的tabbar上面
+    [self.tabBar addSubview:tabBar];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // 在view将要显示的时候，删除系统的UIBarButton
+    for (UIView *childVc in self.tabBar.subviews) {
+        if (![childVc isKindOfClass:[LZTabBar class]]) {
+            [childVc removeFromSuperview];
+        }
+    }
+    
 }
 
 - (void)addAllChildVC
@@ -63,7 +72,10 @@
     LZArenaViewController *arenaVC = [[LZArenaViewController alloc] init];
     [self addChildVC:arenaVC title:@"竞技场" image:[UIImage imageNamed:@"TabBar_Arena_new"] selImage:[UIImage imageNamed:@"TabBar_Arena_selected_new"]];
 
-    LZDiscoverViewController *discoverVC = [[LZDiscoverViewController alloc] init];
+    UIStoryboard *discoverboard = [UIStoryboard storyboardWithName:@"LZDiscover" bundle:nil];
+    
+    
+    LZDiscoverViewController *discoverVC = [discoverboard instantiateInitialViewController];
     [self addChildVC:discoverVC title:@"发现" image:[UIImage imageNamed:@"TabBar_Discovery_new"] selImage:[UIImage imageNamed:@"TabBar_Discovery_selected_new"]];
 
     
@@ -83,7 +95,7 @@
     
     [self.itemArray addObject:childVC.tabBarItem];
     
-    childVC.view.backgroundColor = LZRandomColor;
+//    childVC.view.backgroundColor = LZRandomColor;
     
     // 判断
     if ([childVC isKindOfClass:[LZArenaViewController class]]) {

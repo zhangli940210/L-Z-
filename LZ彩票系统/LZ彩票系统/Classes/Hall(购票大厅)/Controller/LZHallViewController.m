@@ -47,9 +47,10 @@
     
 }
 
-#pragma mark - LZPopViewDelegate方法
+
 
 /*
+#pragma mark - LZPopViewDelegate方法
 - (void)popViewClickBtn:(LZPopView *)popView {
     
     //决定隐藏到哪个位置

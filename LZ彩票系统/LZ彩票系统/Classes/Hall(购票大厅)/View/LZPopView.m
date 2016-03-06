@@ -34,6 +34,7 @@
     [UIView animateWithDuration:0.5 animations:^{
         self.center = point;
         self.transform = CGAffineTransformMakeScale(0.00001, 0.00001);
+//        self.bounds = CGRectMake(0, 0, 0.00001, 0.00001);
     } completion:^(BOOL finished) {
         // 调用block
         completion();

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182E2A561C8C3A7000836441 /* LZMyLotteryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182E2A551C8C3A7000836441 /* LZMyLotteryViewController.xib */; };
+		182E2A581C8C454C00836441 /* LZDiscover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182E2A571C8C454C00836441 /* LZDiscover.storyboard */; };
+		182E2A5B1C8C495F00836441 /* LZBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E2A5A1C8C495F00836441 /* LZBuyViewController.m */; };
+		182E2A5E1C8C4A0D00836441 /* LZTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E2A5D1C8C4A0D00836441 /* LZTitleButton.m */; };
+		182E2A651C8C560900836441 /* LZNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E2A641C8C560900836441 /* LZNewFeatureViewController.m */; };
+		182E2A681C8C569900836441 /* LZNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E2A671C8C569900836441 /* LZNewFeatureCell.m */; };
 		1860B94B1C89950F00E7B9B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1860B94A1C89950F00E7B9B3 /* Assets.xcassets */; };
 		1860B94E1C89950F00E7B9B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1860B94C1C89950F00E7B9B3 /* LaunchScreen.storyboard */; };
 		1860B9711C8996EC00E7B9B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860B96D1C8996EC00E7B9B3 /* AppDelegate.m */; };
@@ -30,6 +36,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182E2A551C8C3A7000836441 /* LZMyLotteryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZMyLotteryViewController.xib; sourceTree = "<group>"; };
+		182E2A571C8C454C00836441 /* LZDiscover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZDiscover.storyboard; sourceTree = "<group>"; };
+		182E2A591C8C495F00836441 /* LZBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZBuyViewController.h; sourceTree = "<group>"; };
+		182E2A5A1C8C495F00836441 /* LZBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZBuyViewController.m; sourceTree = "<group>"; };
+		182E2A5C1C8C4A0D00836441 /* LZTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTitleButton.h; sourceTree = "<group>"; };
+		182E2A5D1C8C4A0D00836441 /* LZTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTitleButton.m; sourceTree = "<group>"; };
+		182E2A631C8C560900836441 /* LZNewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNewFeatureViewController.h; sourceTree = "<group>"; };
+		182E2A641C8C560900836441 /* LZNewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNewFeatureViewController.m; sourceTree = "<group>"; };
+		182E2A661C8C569900836441 /* LZNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNewFeatureCell.h; sourceTree = "<group>"; };
+		182E2A671C8C569900836441 /* LZNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNewFeatureCell.m; sourceTree = "<group>"; };
 		1860B93B1C89950F00E7B9B3 /* LZ彩票系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LZ彩票系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1860B94A1C89950F00E7B9B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1860B94D1C89950F00E7B9B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +98,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182E2A5F1C8C55E200836441 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				182E2A601C8C55E200836441 /* Controller */,
+				182E2A611C8C55E200836441 /* Model */,
+				182E2A621C8C55E200836441 /* View */,
+			);
+			path = "NewFeature(新特性)";
+			sourceTree = "<group>";
+		};
+		182E2A601C8C55E200836441 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				182E2A631C8C560900836441 /* LZNewFeatureViewController.h */,
+				182E2A641C8C560900836441 /* LZNewFeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		182E2A611C8C55E200836441 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		182E2A621C8C55E200836441 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				182E2A661C8C569900836441 /* LZNewFeatureCell.h */,
+				182E2A671C8C569900836441 /* LZNewFeatureCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1860B9321C89950E00E7B9B3 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +172,7 @@
 		1860B9551C8996EC00E7B9B3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				182E2A5F1C8C55E200836441 /* NewFeature(新特性) */,
 				18AC2B3B1C89A1AD009EEFE1 /* Main */,
 				1860B95E1C8996EC00E7B9B3 /* Hall(购票大厅) */,
 				1860B9561C8996EC00E7B9B3 /* Arena(竞技场) */,
@@ -180,6 +232,9 @@
 			children = (
 				18AC2B321C899DB9009EEFE1 /* LZDiscoverViewController.h */,
 				18AC2B331C899DB9009EEFE1 /* LZDiscoverViewController.m */,
+				182E2A591C8C495F00836441 /* LZBuyViewController.h */,
+				182E2A5A1C8C495F00836441 /* LZBuyViewController.m */,
+				182E2A571C8C454C00836441 /* LZDiscover.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +249,8 @@
 		1860B95D1C8996EC00E7B9B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				182E2A5C1C8C4A0D00836441 /* LZTitleButton.h */,
+				182E2A5D1C8C4A0D00836441 /* LZTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +341,7 @@
 			children = (
 				18AC2B381C899DF5009EEFE1 /* LZMyLotteryViewController.h */,
 				18AC2B391C899DF5009EEFE1 /* LZMyLotteryViewController.m */,
+				182E2A551C8C3A7000836441 /* LZMyLotteryViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -433,9 +491,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182E2A561C8C3A7000836441 /* LZMyLotteryViewController.xib in Resources */,
 				18630EF81C8ABC2700D2445E /* LZPopView.xib in Resources */,
 				1860B94E1C89950F00E7B9B3 /* LaunchScreen.storyboard in Resources */,
 				1860B94B1C89950F00E7B9B3 /* Assets.xcassets in Resources */,
+				182E2A581C8C454C00836441 /* LZDiscover.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +512,11 @@
 				18630EF61C8AB78600D2445E /* LZPopView.m in Sources */,
 				18AC2B371C899DCE009EEFE1 /* LZHistoryViewController.m in Sources */,
 				18AC2B341C899DB9009EEFE1 /* LZDiscoverViewController.m in Sources */,
+				182E2A651C8C560900836441 /* LZNewFeatureViewController.m in Sources */,
 				18AC2B2E1C899D7F009EEFE1 /* LZHallViewController.m in Sources */,
+				182E2A681C8C569900836441 /* LZNewFeatureCell.m in Sources */,
+				182E2A5E1C8C4A0D00836441 /* LZTitleButton.m in Sources */,
+				182E2A5B1C8C495F00836441 /* LZBuyViewController.m in Sources */,
 				18630EED1C8A8E3400D2445E /* LZNavigationController.m in Sources */,
 				1860B9721C8996EC00E7B9B3 /* main.m in Sources */,
 				18630EF31C8AB61B00D2445E /* LZCoverView.m in Sources */,

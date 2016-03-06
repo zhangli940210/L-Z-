@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mCI-Ye-c8E">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Discover View Controller-->
+        <scene sceneID="GrM-eW-XVL">
+            <objects>
+                <tableViewController id="mCI-Ye-c8E" customClass="LZDiscoverViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ZqZ-1B-q8R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="bIZ-l0-W1C">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="176" id="6Pc-7o-Fl7">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="176"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Pc-7o-Fl7" id="Lwy-OF-fNk">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="TG6-Is-Fss">
+                                                    <rect key="frame" x="15" y="25" width="133" height="53"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_luckyBet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="wht-aI-Uxz">
+                                                    <rect key="frame" x="201" y="26" width="148" height="128"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="跟着高手买，赚赚赚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6W-dB-vbq">
+                                                    <rect key="frame" x="15" y="117" width="158" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GFG-qQ-Rr4" kind="push" id="sFp-KB-nTH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Wqf-RA-cUb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="176" id="G2T-F6-X3J">
+                                        <rect key="frame" x="0.0" y="247" width="375" height="176"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G2T-F6-X3J" id="F5P-oN-2Nl">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="rRt-7j-iQn">
+                                                    <rect key="frame" x="15" y="25" width="133" height="53"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_luckyBet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="FmK-7D-mgb">
+                                                    <rect key="frame" x="201" y="26" width="148" height="128"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="跟着高手买，赚赚赚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt4-QP-H0I">
+                                                    <rect key="frame" x="15" y="117" width="158" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GFG-qQ-Rr4" kind="push" id="8Cw-1q-Ahe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="x2a-j2-hmT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="176" id="8by-wk-q4f">
+                                        <rect key="frame" x="0.0" y="459" width="375" height="176"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8by-wk-q4f" id="SxH-sm-Lae">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="0GJ-7E-rB0">
+                                                    <rect key="frame" x="15" y="25" width="133" height="53"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_luckyBet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="jgu-xq-DPE">
+                                                    <rect key="frame" x="201" y="26" width="148" height="128"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="跟着高手买，赚赚赚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9q-eZ-yBQ">
+                                                    <rect key="frame" x="15" y="117" width="158" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GFG-qQ-Rr4" kind="push" id="KRo-QU-ROb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="xXH-UE-UZV">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="176" id="15B-pa-TVj">
+                                        <rect key="frame" x="0.0" y="671" width="375" height="176"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="15B-pa-TVj" id="Nr4-kR-j8z">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="175"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="MWK-fT-ZnW">
+                                                    <rect key="frame" x="15" y="25" width="133" height="53"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discovery_luckyBet_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Izv-nm-m4D">
+                                                    <rect key="frame" x="201" y="26" width="148" height="128"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="跟着高手买，赚赚赚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUq-NP-ncz">
+                                                    <rect key="frame" x="15" y="117" width="158" height="35"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="GFG-qQ-Rr4" kind="push" id="TBM-wq-eYD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="mCI-Ye-c8E" id="gkV-FV-Bye"/>
+                            <outlet property="delegate" destination="mCI-Ye-c8E" id="cBb-fG-riE"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mM-nm-AbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-766.5" y="253.5"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="4cc-Oz-aZx">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="GFG-qQ-Rr4" customClass="LZBuyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wWu-Ce-N5Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="gwL-Mx-Q2n"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="71v-UE-kyo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nvt-k7-7Db"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Czn-cg-0jC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.5" y="197.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discovery_groupBuy_title" width="54" height="23"/>
+        <image name="discovery_luckyBet_icon" width="101" height="79"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="sFp-KB-nTH"/>
+    </inferredMetricsTieBreakers>
+</document>
