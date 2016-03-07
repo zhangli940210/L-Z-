@@ -12,4 +12,10 @@
 
 @property (nonatomic, strong) UIImage *image;
 
+/** 立即体验按钮*/
+@property (nonatomic, weak) UIButton *startBtn;
+
+// 设置立即体验按钮是否隐藏显示
+- (void)setStartBtnHidden:(NSIndexPath *)indexPath count:(NSInteger)count;
+
 @end

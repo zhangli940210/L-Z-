@@ -9,6 +9,8 @@
 #import "LZNewFeatureViewController.h"
 #import "LZNewFeatureCell.h"
 
+#define LZItemCount 4
+
 @interface LZNewFeatureViewController ()
 
 //上一次的offset.x
@@ -92,7 +94,10 @@ static NSString * const reuseIdentifier = @"Cell";
         self.guide1ImageV.x -= offsetX;
     }];
     
-//    LZLog(@"--offset%f", offsetX);
+    // 计算当前多少页
+    NSInteger page = scrollView.contentOffset.x / scrollView.width;
+    // 换一张图片
+    self.guide1ImageV.image = [UIImage imageNamed:[NSString stringWithFormat:@"guide%zd", page + 1]];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -113,6 +118,9 @@ static NSString * const reuseIdentifier = @"Cell";
     LZNewFeatureCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     cell.image = [UIImage imageNamed:[NSString stringWithFormat:@"guide%ldBackground568h",indexPath.item + 1]];
+    
+    // 设置立即体验按钮是否隐藏显示
+    [cell setStartBtnHidden:indexPath count:LZItemCount];
     
     return cell;
 }

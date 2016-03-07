@@ -7,6 +7,7 @@
 //
 
 #import "LZMyLotteryViewController.h"
+#import "LZSettingViewController.h"
 
 @interface LZMyLotteryViewController ()
 
@@ -49,11 +50,13 @@
 }
 
 - (void)leftClick {
-//    LZLog(@"leftClick");
+
 }
 
 - (void)settingClick {
-//    LZLog(@"settingClick");
+    
+    LZSettingViewController *setting = [[LZSettingViewController alloc] init];
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 @end

@@ -37,7 +37,6 @@
 //    LZLog(@"- %@", self.interactivePopGestureRecognizer);
     
     // 保存侧滑手势的代理
-//    LZLog(@"%@",self.interactivePopGestureRecognizer.delegate);
     self.popDelegate = self.interactivePopGestureRecognizer.delegate;
     
     self.delegate = self;

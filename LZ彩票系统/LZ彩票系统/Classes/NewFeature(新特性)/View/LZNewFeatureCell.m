@@ -7,9 +7,12 @@
 //
 
 #import "LZNewFeatureCell.h"
+#import "LZTabBarController.h"
 
 @interface LZNewFeatureCell ()
 @property (nonatomic , weak) UIImageView *imageV;
+
+
 @end
 
 @implementation LZNewFeatureCell
@@ -26,12 +29,48 @@
     return _imageV;
 }
 
+- (UIButton *)startBtn
+{
+    if (_startBtn == nil) {
+        UIButton *startBtn= [[UIButton alloc] init];
+        // 设置图片
+        [startBtn setImage:[UIImage imageNamed:@"guideStart"] forState:UIControlStateNormal];
+        // 设置尺寸
+        [startBtn sizeToFit];
+        // 设置按钮位置
+        startBtn.center = CGPointMake(self.width * 0.5, self.height * 0.85);
+        // 添加上去
+        [self.contentView addSubview:startBtn];
+        // 添加监听事件
+        [startBtn addTarget:self action:@selector(startBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        _startBtn = startBtn;
+        
+    }
+    return _startBtn;
+}
+
+// 切换控制器
+- (void)startBtnClick
+{
+    LZTabBarController *tabVC = [[LZTabBarController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = tabVC;
+}
+
 - (void)setImage:(UIImage *)image
 {
     _image = image;
     self.imageV.image = image;
 }
 
+// 设置立即体验按钮是否隐藏显示
+- (void)setStartBtnHidden:(NSIndexPath *)indexPath count:(NSInteger)count
+{
+    if (indexPath.item == count - 1) {
+        self.startBtn.hidden = NO;
+    } else {
+        self.startBtn.hidden = YES;
+    }
+}
 
 
 @end
