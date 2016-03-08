@@ -10,6 +10,10 @@
 #import "LZTabBarController.h"
 
 @interface LZNewFeatureCell ()
+
+/** 立即体验按钮*/
+@property (nonatomic, weak) UIButton *startBtn;
+
 @property (nonatomic , weak) UIImageView *imageV;
 
 

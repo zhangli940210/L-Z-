@@ -39,12 +39,12 @@
     // 默认选中第1个
     seg.selectedSegmentIndex = 0;
     
-//     设置字体颜色
+//     设置选中字体颜色
     NSMutableDictionary *textAtt = [NSMutableDictionary dictionary];
     textAtt[NSForegroundColorAttributeName] = [UIColor whiteColor];
     [seg setTitleTextAttributes:textAtt forState:UIControlStateSelected];
     
-    // 设置主题颜色,边框颜色，文字颜色
+    // 设置主题颜色---边框颜色，文字颜色
     [seg setTintColor:LZColor(0, 158, 161)];
     
     // 赋值给titleView

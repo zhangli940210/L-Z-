@@ -38,10 +38,6 @@
     
     [btn addTarget:self action:@selector(leftClick) forControlEvents:UIControlEventTouchUpInside];
     
-    // 设置字体
-    NSMutableDictionary *textAtt = [NSMutableDictionary dictionary];
-    textAtt[NSFontAttributeName] = [UIFont systemFontOfSize:15];
-    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     
     // 设置图片

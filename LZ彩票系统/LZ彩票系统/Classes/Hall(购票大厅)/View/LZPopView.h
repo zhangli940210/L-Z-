@@ -8,28 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^QQBlock)();
-
 typedef void (^WeiBoBlock)();
-
-//@class LZPopView;
-//
-//@protocol LZPopViewDelegate <NSObject>
-//
-//@optional
-//- (void)popViewClickBtn:(LZPopView *)popView;
-//
-//@end
-
 
 @interface LZPopView : UIView
 
 + (instancetype)showInPoint:(CGPoint)point;
 // 给定一个点,隐藏到指定的位置
-//- (void)hiddenInPoint:(CGPoint)point completion:(void (^)())completion;
-- (void)hiddenInPoint:(CGPoint)point completion:(QQBlock) completion;
-/** 代理*/
-//@property (nonatomic, weak) id<LZPopViewDelegate> delegate;
+- (void)hiddenInPoint:(CGPoint)point completion:(void (^)())completion;
 /** block变量*/
 @property (nonatomic, copy) WeiBoBlock pBlock;
 @end

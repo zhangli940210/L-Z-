@@ -23,13 +23,8 @@
     
     // 添加到
     self.navigationItem.titleView = btn;
-    
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"助手" style:UIBarButtonItemStylePlain target:self action:@selector(help)];
 }
 
-//- (void)help
-//{
-//    LZLog(@"help");
-//}
+
 
 @end
