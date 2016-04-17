@@ -27,6 +27,8 @@
 		18630EF31C8AB61B00D2445E /* LZCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18630EF21C8AB61B00D2445E /* LZCoverView.m */; };
 		18630EF61C8AB78600D2445E /* LZPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18630EF51C8AB78600D2445E /* LZPopView.m */; };
 		18630EF81C8ABC2700D2445E /* LZPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18630EF71C8ABC2700D2445E /* LZPopView.xib */; };
+		1887AF1A1CC1F9C000BF8567 /* LZLuFeiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1887AF191CC1F9C000BF8567 /* LZLuFeiViewController.m */; };
+		1887AF1D1CC1F9DE00BF8567 /* LZSuoLongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1887AF1C1CC1F9DE00BF8567 /* LZSuoLongViewController.m */; };
 		18AC2B2E1C899D7F009EEFE1 /* LZHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC2B2D1C899D7F009EEFE1 /* LZHallViewController.m */; };
 		18AC2B311C899D9C009EEFE1 /* LZArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC2B301C899D9C009EEFE1 /* LZArenaViewController.m */; };
 		18AC2B341C899DB9009EEFE1 /* LZDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AC2B331C899DB9009EEFE1 /* LZDiscoverViewController.m */; };
@@ -86,6 +88,10 @@
 		18630EF41C8AB78600D2445E /* LZPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPopView.h; sourceTree = "<group>"; };
 		18630EF51C8AB78600D2445E /* LZPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZPopView.m; sourceTree = "<group>"; };
 		18630EF71C8ABC2700D2445E /* LZPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZPopView.xib; sourceTree = "<group>"; };
+		1887AF181CC1F9C000BF8567 /* LZLuFeiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZLuFeiViewController.h; sourceTree = "<group>"; };
+		1887AF191CC1F9C000BF8567 /* LZLuFeiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZLuFeiViewController.m; sourceTree = "<group>"; };
+		1887AF1B1CC1F9DE00BF8567 /* LZSuoLongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSuoLongViewController.h; sourceTree = "<group>"; };
+		1887AF1C1CC1F9DE00BF8567 /* LZSuoLongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSuoLongViewController.m; sourceTree = "<group>"; };
 		18AC2B2C1C899D7F009EEFE1 /* LZHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZHallViewController.h; sourceTree = "<group>"; };
 		18AC2B2D1C899D7F009EEFE1 /* LZHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZHallViewController.m; sourceTree = "<group>"; };
 		18AC2B2F1C899D9C009EEFE1 /* LZArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZArenaViewController.h; sourceTree = "<group>"; };
@@ -239,6 +245,10 @@
 			children = (
 				18AC2B2F1C899D9C009EEFE1 /* LZArenaViewController.h */,
 				18AC2B301C899D9C009EEFE1 /* LZArenaViewController.m */,
+				1887AF181CC1F9C000BF8567 /* LZLuFeiViewController.h */,
+				1887AF191CC1F9C000BF8567 /* LZLuFeiViewController.m */,
+				1887AF1B1CC1F9DE00BF8567 /* LZSuoLongViewController.h */,
+				1887AF1C1CC1F9DE00BF8567 /* LZSuoLongViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -663,9 +673,11 @@
 				1861864D1C89B32000EFF296 /* LZTabBar.m in Sources */,
 				18BA288B1C8D9AC300BCF0DD /* LZSettingRowItem.m in Sources */,
 				18AC2B3A1C899DF5009EEFE1 /* LZMyLotteryViewController.m in Sources */,
+				1887AF1D1CC1F9DE00BF8567 /* LZSuoLongViewController.m in Sources */,
 				1860B9791C89987600E7B9B3 /* UIView+LZExtension.m in Sources */,
 				18BA28891C8D9AC300BCF0DD /* LZArrowItem.m in Sources */,
 				1860B9711C8996EC00E7B9B3 /* AppDelegate.m in Sources */,
+				1887AF1A1CC1F9C000BF8567 /* LZLuFeiViewController.m in Sources */,
 				18AC2B311C899D9C009EEFE1 /* LZArenaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

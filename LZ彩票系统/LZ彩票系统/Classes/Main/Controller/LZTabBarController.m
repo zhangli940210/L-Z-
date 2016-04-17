@@ -107,10 +107,4 @@
     }
 }
 
-//#pragma mark - LZTabBarDelegate 方法
-//- (void)tabBar:(LZTabBar *)tabBar selectBtnIndex:(NSInteger)index
-//{
-//    self.selectedIndex = index;
-//}
-
 @end

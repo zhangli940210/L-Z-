@@ -48,9 +48,6 @@
     // 赋值给上一次按钮作为选中按钮
     self.preSelectedBtn = btn;
     
-//    if ([self.delegate respondsToSelector:@selector(tabBar:selectBtnIndex:)]) {
-//        [self.delegate tabBar:self selectBtnIndex:btn.tag];
-//    }
     if (_pBlock) {
         _pBlock(btn.tag);
     }
